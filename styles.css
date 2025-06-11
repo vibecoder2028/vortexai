@@ -289,29 +289,6 @@ nav a.active {
     box-shadow: 0 5px 15px rgba(231, 76, 60, 0.4);
 }
 
-/* Footer */
-footer {
-    background: var(--dark);
-    color: rgba(255,255,255,0.7);
-    text-align: center;
-    padding: 2rem 0;
-    font-size: 0.9rem;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .goal-card, .cta-card {
-        padding: 1.5rem;
-    }
-    
-    .services-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    header h1 {
-        font-size: 2rem;
-    }
-}
 /* Page Sections */
 .page-section {
     padding: 4rem 0;
@@ -446,3 +423,28 @@ footer {
 .schedule-call {
     margin-top: 2rem;
 }
+
+/* Footer */
+footer {
+    background: var(--dark);
+    color: rgba(255,255,255,0.7);
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .goal-card, .cta-card {
+        padding: 1.5rem;
+    }
+    
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    header h1 {
+        font-size: 2rem;
+    }
+}
+
