@@ -51,6 +51,36 @@ header p {
     font-size: 1.2rem;
     opacity: 0.9;
 }
+/* Navigation Styles */
+nav {
+    margin-top: 1.5rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+nav a:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+nav a.active {
+    background: rgba(255, 255, 255, 0.25);
+}
 
 /* Goal Section */
 .goal-section {
