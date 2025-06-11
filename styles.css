@@ -424,6 +424,26 @@ nav a.active {
     margin-top: 2rem;
 }
 
+.return-button {
+  margin: 40px auto;
+  text-align: center;
+}
+
+.return-button a {
+  background-color: #004080;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.return-button a:hover {
+  background-color: #00264d;
+}
+
 /* Footer */
 footer {
     background: var(--dark);
