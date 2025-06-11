@@ -1,0 +1,252 @@
+:root {
+    --primary: #2c3e50;
+    --secondary: #3498db;
+    --accent: #e74c3c;
+    --light: #ecf0f1;
+    --dark: #2c3e50;
+    --success: #2ecc71;
+    --warning: #f39c12;
+    --info: #3498db;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9fbfd;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(135deg, var(--primary), #1a2530);
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Goal Section */
+.goal-section {
+    padding: 4rem 0;
+    background-color: white;
+}
+
+.goal-card {
+    background: linear-gradient(to right bottom, #f8f9fa, #e9ecef);
+    border-radius: 12px;
+    padding: 2.5rem;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.goal-card h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary);
+}
+
+.goal-card p {
+    font-size: 1.1rem;
+    color: #444;
+}
+
+/* Services Section */
+.services {
+    padding: 5rem 0;
+    background-color: #f0f7ff;
+}
+
+.services h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    color: var(--primary);
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.service-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.icon-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.tech-skills {
+    background: linear-gradient(135deg, var(--info), #2980b9);
+    box-shadow: 0 8px 20px rgba(52, 152, 219, 0.3);
+}
+
+.tech-skills::before {
+    content: "";
+    width: 60%;
+    height: 60%;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M22 21H2V3h2v14h2V5h2v12h2V7h2v10h2V9h2v8h2V11h2v10z"/></svg>') center no-repeat;
+}
+
+.executive {
+    background: linear-gradient(135deg, var(--success), #27ae60);
+    box-shadow: 0 8px 20px rgba(46, 204, 113, 0.3);
+}
+
+.executive::before {
+    content: "";
+    width: 60%;
+    height: 60%;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M21 3H3v18h18V3zm-9 3c1.65 0 3 1.35 3 3s-1.35 3-3 3-3-1.35-3-3 1.35-3 3-3zm6 12H6v-1.5c0-1.66 3.34-2.5 5-2.5s5 .84 5 2.5V18z"/></svg>') center no-repeat;
+}
+
+.mental {
+    background: linear-gradient(135deg, #9b59b6, #8e44ad);
+    box-shadow: 0 8px 20px rgba(155, 89, 182, 0.3);
+}
+
+.mental::before {
+    content: "";
+    width: 60%;
+    height: 60%;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>') center no-repeat;
+}
+
+.community {
+    background: linear-gradient(135deg, var(--warning), #e67e22);
+    box-shadow: 0 8px 20px rgba(243, 156, 18, 0.3);
+}
+
+.community::before {
+    content: "";
+    width: 60%;
+    height: 60%;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5s-3 1.34-3 3 1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>') center no-repeat;
+}
+
+.service-card h3 {
+    margin-bottom: 1rem;
+    color: var(--dark);
+    font-size: 1.4rem;
+}
+
+.service-card p {
+    color: #555;
+    font-size: 0.95rem;
+}
+
+/* CTA Section */
+.cta {
+    padding: 4rem 0;
+    background: linear-gradient(135deg, var(--primary), #1a2530);
+    color: white;
+}
+
+.cta-card {
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 3rem;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.cta-card h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.cta-card p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.cta-card button {
+    background: var(--accent);
+    color: white;
+    border: none;
+    padding: 12px 35px;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+.cta-card button:hover {
+    background: #c0392b;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(231, 76, 60, 0.4);
+}
+
+/* Footer */
+footer {
+    background: var(--dark);
+    color: rgba(255,255,255,0.7);
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .goal-card, .cta-card {
+        padding: 1.5rem;
+    }
+    
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    header h1 {
+        font-size: 2rem;
+    }
+}
