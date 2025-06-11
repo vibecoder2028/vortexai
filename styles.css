@@ -82,6 +82,11 @@ nav a.active {
     background: rgba(255, 255, 255, 0.25);
 }
 
+.logo {
+    width: 30px;
+    height: auto;  /* Maintains the aspect ratio */
+}
+
 /* Goal Section */
 .goal-section {
     padding: 4rem 0;
